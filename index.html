@@ -27,10 +27,12 @@
         const date = document.getElementById("日付").value;
         const li = document.createElement("li");
 
-        li.innerHTML = title + "<br>" + content + "<br>" + date;
+        li.innerHTML = date + "<br>" + title + "<br>" + content;
         document.getElementById("list").appendChild(li);
         }
-　　　　
+　　　　//入力リセット
+        document.getElementById("タイトル")"";
+        document.getElementById("本文")"";
     </script>
     
     
@@ -42,6 +44,7 @@
 </body>
 
 </html>
+
 
 
 
