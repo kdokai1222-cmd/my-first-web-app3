@@ -24,10 +24,10 @@
         //リストアイテム
         const title = document.getElementById("タイトル").value;
         const content = document.getElementById("本文").value;
-
+        const date = document.getElementById("日付").value;
         const li = document.createElement("li");
 
-        li.innerHTML = title + "<br>" + content;
+        li.innerHTML = title + "<br>" + content + "<br>" + date;
         document.getElementById("list").appendChild(li);
         }
 　　　　
@@ -42,6 +42,7 @@
 </body>
 
 </html>
+
 
 
 
