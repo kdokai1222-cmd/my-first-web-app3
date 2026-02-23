@@ -16,14 +16,17 @@
     <br>本文:<textarea id="本文" rows="5" cols="40" value="今日は楽しかった"></textarea></br>
     <input type="date" id="日付" value="2026-02-18"/>
     <input type="button" value="保存" id="save" onclick="getValue1()"/>
+
+    <ul class="list-group" id="list">記録一覧</ul>   
+    
     <script>
         function getValue1() {
         //リストアイテム
-        const title = ~取得~
-        const content = ~取得~
-            
+        const title = document.getElementById("タイトル");
+        const content = document.getElementById("本文");
+
         const li = document.createElement("li");
-            
+
         li.innerHTML = title + "<br>" + content;
         document.getElementById("list").appendChild(li);
         }
@@ -32,13 +35,14 @@
     
     
 
-<ul class="list-group" id="list">記録一覧</ul>    
+
     
     
 
 </body>
 
 </html>
+
 
 
 
