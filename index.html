@@ -8,16 +8,17 @@
 <body>
     <h1>日記</h1>
     <p>プログラミング練習</p>
-    <strong>私は文系大学生でプログラミング未経験者です。<br>これは私のプログラミング練習であり、私の技術力向上を目的としています。</br>
+    <strong>私は文系大学生でプログラミング未経験者です。<br>これは私のプログラミング練習であり、私の技術力向上を目的としています。
     </strong>
     <label for="story">今日の記録:</label>
     
-    <br>タイトル:<input type="text" id="タイトル"></br>
-    <br>本文:<textarea id="本文" rows="5" cols="40" >今日は楽しかった</textarea></br>
+    <br>タイトル:<input type="text" id="タイトル">
+    <br>本文:<textarea id="本文" rows="5" cols="40" >今日は楽しかった</textarea>
     <input type="date" id="日付" value="2026-02-18"/>
     <input type="button" value="保存" id="save" onclick="getValue1()"/>
 
-    <ul class="list-group" id="list">記録一覧</ul>   
+    <p>記録一覧</p>
+    <ul class="list-group" id="list"></ul>   
     
     <script>
         function getValue1() {
@@ -31,8 +32,8 @@
         document.getElementById("list").appendChild(li);
         }
 　　　　//入力リセット
-        document.getElementById("タイトル")"";
-        document.getElementById("本文")"";
+        document.getElementById("タイトル").value = "";
+        document.getElementById("本文").value = "";
     </script>
     
     
@@ -44,6 +45,7 @@
 </body>
 
 </html>
+
 
 
 
