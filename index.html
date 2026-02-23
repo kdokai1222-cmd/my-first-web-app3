@@ -13,7 +13,7 @@
     <label for="story">今日の記録:</label>
     
     <br>タイトル:<input type="text" id="タイトル"></br>
-    <br>本文:<textarea id="本文" rows="5" cols="40" value="今日は楽しかった"></textarea></br>
+    <br>本文:<textarea id="本文" rows="5" cols="40" >今日は楽しかった</textarea></br>
     <input type="date" id="日付" value="2026-02-18"/>
     <input type="button" value="保存" id="save" onclick="getValue1()"/>
 
@@ -22,8 +22,8 @@
     <script>
         function getValue1() {
         //リストアイテム
-        const title = document.getElementById("タイトル");
-        const content = document.getElementById("本文");
+        const title = document.getElementById("タイトル").value;
+        const content = document.getElementById("本文").value;
 
         const li = document.createElement("li");
 
@@ -42,6 +42,7 @@
 </body>
 
 </html>
+
 
 
 
