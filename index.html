@@ -14,23 +14,18 @@
     
     <br>タイトル:<input type="text" id="タイトル"></br>
     <br>本文:<input type="textarea" id="本文" rows="10" cols="40" value="今日は楽しかった"></br>
-    <input
-    type="date" id="日付" value="2026-02-18"/>
+    <input type="date" id="日付" value="2026-02-18"/>
     <input type="button" value="保存" id="save" onclick="getValue1()"/>
     <script>
         function getValue1(){
             const ta1 = document.getElementById("本文").value;
             document.getElementById("list").textcontent = ta1;
             ｝
-　　　　 console.log("関数は動いている");
-
+　　　　
     </script>
     
     
-    
-    
-    
-<button type="delete">削除</button>
+
 <ul class="list-group" id="list">記録一覧</ul>    
     
     
@@ -38,6 +33,7 @@
 </body>
 
 </html>
+
 
 
 
