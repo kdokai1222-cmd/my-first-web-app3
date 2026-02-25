@@ -23,8 +23,8 @@
     <script>
         function getValue1() {
         //リストアイテム
-        const title = document.getElementById("タイトル").value;.trim();
-        const content = document.getElementById("本文").value;.trim();
+        const title = document.getElementById("タイトル").value.trim();
+        const content = document.getElementById("本文").value.trim();
 
              if (title === "" || content === "") {
             alert("タイトル、本文を入力してください");
@@ -35,7 +35,6 @@
         const li = document.createElement("li");
 
         li.innerHTML = date + "<br>" + title + "<br>" + content;
-        document.getElementById("list").appendChild(li);
         
         //削除ボタン
         const deletebtn = document.createElement("button");
@@ -66,6 +65,7 @@
 </body>
 
 </html>
+
 
 
 
