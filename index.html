@@ -23,9 +23,9 @@
     <script>
         function getValue1() {
         //リストアイテム
-        const title = document.getElementById("タイトル").value;
-        const content = document.getElementById("本文").value;
-        const date = document.getElementById("日付").value;
+        const title = document.getElementById("タイトル").value;.trim();
+        const content = document.getElementById("本文").value;.trim();
+        const date = document.getElementById("日付").value;.trim();
         const li = document.createElement("li");
 
         li.innerHTML = date + "<br>" + title + "<br>" + content;
@@ -46,6 +46,11 @@
         document.getElementById("タイトル").value = "";
         document.getElementById("本文").value = "";
         }
+        if (title === "" || content === "" || date === "") {
+            alert("タイトル、本文、日付を入力してください");
+            return;
+        }
+        
     </script>
     
     
@@ -57,6 +62,7 @@
 </body>
 
 </html>
+
 
 
 
