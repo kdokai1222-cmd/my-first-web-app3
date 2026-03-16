@@ -22,16 +22,6 @@
     
     <script>
         let diarylist = [];
-
-        const diary = {
-            title,
-            content,
-            date,
-        };
-
-        diarylist.push(diary);
-
-        localStorage.setItem("日記",JSON.stringify(dairylist));
         
         function getValue1() {
             
@@ -78,6 +68,18 @@
             if (event.key === "Enter"){
                 getValue1();
             }
+
+        //保存
+             const diary = {
+            title,
+            content,
+            date,
+        };
+
+            diarylist.push(diary);
+
+             localStorage.setItem("日記",JSON.stringify(dairylist));
+            
         });
 
         
