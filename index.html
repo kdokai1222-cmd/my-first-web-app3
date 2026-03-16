@@ -33,6 +33,18 @@
             alert("タイトル、本文を入力してください");
             return;
         }
+             //保存
+             const diary = {
+            title,
+            content,
+            date,
+        };
+
+            diarylist.push(diary);
+
+             localStorage.setItem("日記",JSON.stringify(dairylist));
+            
+        });
             
         const date = document.getElementById("日付").value;
         const li = document.createElement("li");
@@ -69,18 +81,6 @@
                 getValue1();
             }
 
-        //保存
-             const diary = {
-            title,
-            content,
-            date,
-        };
-
-            diarylist.push(diary);
-
-             localStorage.setItem("日記",JSON.stringify(dairylist));
-            
-        });
 
         
         //エンター＋改行
