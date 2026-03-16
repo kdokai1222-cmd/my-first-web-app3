@@ -22,6 +22,29 @@
     
     <script>
         let diarylist = [];
+        const saveDate = localStorage.getItem("日記");
+        if (saveDate){diarylist = JSON.parse(saveDate);
+
+                    diarylist.(function(diary) {
+                    const li = document.createElement("li");
+
+                        li.innerHTML = diary.date + "<br>" + diary.title + "<br>" + diary.content;
+
+                        const deletebtn = document.createElement("button");
+                        deletebtn.textContent = "削除";
+
+                        deletebtn.addEventlistener('click', function() {
+                        li.remove();
+                        });
+
+                        li.appendChild(deletebtn);
+                        document.getElementById("list").appendChild(li);
+
+                    });
+                          
+        }
+        
+            
         
         function getValue1() {
             
